@@ -1,6 +1,6 @@
 ﻿Feature: Vote Model Validation
 
-# QUESTION TEXT
+# VOTE VALUE
 Scenario: Validate Vote Value (-2)
 	Given I have created a new Vote
 	And I have set the Value as -2
