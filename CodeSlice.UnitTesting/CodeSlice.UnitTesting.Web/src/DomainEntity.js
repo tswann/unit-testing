@@ -14,15 +14,15 @@
         var errors = [];
 
         if(this.id === null){
-            errors.push("ID cannot be null");
+            errors.push({ field: 'id', message: "ID cannot be null" });
         }
 
         if(this.createdBy === null || this.createdBy === ''){
-            errors.push("Created By cannot be null");
+            errors.push({ field: 'createdBy', message: "Created By cannot be null" });
         }
 
         if(this.createdDate === null){
-            errors.push("Created Date cannot be null");
+            errors.push({ field: 'createdDate', message: "Created Date cannot be null" });
         }
 
         return errors;

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "CodeSlice.UnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSpec", "CodeSlice.UnitTesting.MSpec\MSpec.csproj", "{85A271CA-2C5E-42C0-9F22-AD17AC97872E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSlice.UnitTesting.Web", "CodeSlice.UnitTesting.Web\CodeSlice.UnitTesting.Web.csproj", "{75E38950-36C3-460D-AE05-300F35554663}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "CodeSlice.UnitTesting.Web\Web.csproj", "{75E38950-36C3-460D-AE05-300F35554663}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
