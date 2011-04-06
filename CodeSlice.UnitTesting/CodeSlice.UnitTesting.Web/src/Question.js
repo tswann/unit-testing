@@ -8,7 +8,7 @@
     validate: function(){
         var errors = this.callParent();
         
-        if(this.getQuestionText() === null){
+        if(this.getQuestionText() === null || this.getQuestionText() === ''){
             errors.push({ field: 'questionText', message: "Question Text cannot be null" });
         }
 

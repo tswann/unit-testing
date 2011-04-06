@@ -5,7 +5,7 @@
     },
 
     getNormalisedName: function(){
-        return (this.name || '').replace(/ /g, '').toLowerCase();
+        return (this.getName() || '').replace(/ /g, '').toLowerCase();
     },
 
     validate: function(){
