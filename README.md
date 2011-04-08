@@ -5,6 +5,7 @@ The idea is to take the same set of classes and apply the same unit test to them
 
 - Specflow
 - MSpec
+- NSpec
 
 JavaScript Unit Testing Examples
 ==========================
