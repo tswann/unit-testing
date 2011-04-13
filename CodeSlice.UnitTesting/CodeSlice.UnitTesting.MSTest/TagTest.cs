@@ -12,11 +12,7 @@ namespace CodeSlice.UnitTesting.NUnit
         [TestMethod]
         public void TagNameNormalisationTest()
         {
-            Model.Tag tag = new Model.Tag
-            {
-                Name = "My Tag Name"
-            };
-
+            Model.Tag tag = new Model.Tag { Name = "My Tag Name" };
             Assert.AreEqual(tag.NormalisedName, "mytagname");
         }
     }
