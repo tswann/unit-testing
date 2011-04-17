@@ -23,5 +23,11 @@ namespace CodeSlice.UnitTesting.NSpec
             Model.Question q = new Model.Question { QuestionText = "Valid Value" };
             it["of Valid Value, should be no errors"] = () => this.Validate(q, "QuestionText").should_be_empty();
         }
+
+        void when_i_create_a_question_the_created_date()
+        {
+            Model.Question q = new Model.Question();
+            it["should be roughly now"] = () => q.CreatedDate.should_be(DateTime.Now);
+        }
     }
 }
