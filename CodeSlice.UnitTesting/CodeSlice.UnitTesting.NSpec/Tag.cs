@@ -5,10 +5,11 @@ namespace CodeSlice.UnitTesting.NSpec
 {
     class describe_Tag : nspec
     {
-        void when_setting_the_tag_name()
+        void when_setting_the_tag_name_to_My_Tag_Name()
         {
             before = () => _tag = new Tag { Name = "My Tag Name" };
-            it["should normalise the tag name"] = () => _tag.NormalisedName.should_be("mytagname");
+            string expected = "mytagname";
+            it["should normalise the tag name to {0}".With(expected)] = () => _tag.NormalisedName.should_be(expected);
         }
 
         private Tag _tag;
