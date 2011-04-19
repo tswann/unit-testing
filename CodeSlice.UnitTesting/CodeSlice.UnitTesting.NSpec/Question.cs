@@ -29,5 +29,35 @@ namespace CodeSlice.UnitTesting.NSpec
             Model.Question q = new Model.Question();
             it["should be roughly now"] = () => q.CreatedDate.should_be(DateTime.Now);
         }
+
+        void when_validating_the_Difficulty_property_with_an_invalid_value()
+        {
+            new[] { -2, 0, 6, 7 }.Do(value =>
+            {
+                Model.Question q = new Model.Question { Difficulty = value };
+                it["of {0}, should be errors".With(value)] = () => this.Validate(q, "Difficulty").should_not_be_empty();
+            });
+        }
+
+        void when_validating_the_Difficulty_property_with_a_valid_value()
+        {
+            new[] { 1, 2, 3, 4, 5 }.Do(value =>
+            {
+                Model.Question q = new Model.Question { Difficulty = value };
+                it["of {0}, should be no errors".With(value)] = () => this.Validate(q, "Difficulty").should_be_empty();
+            });
+        }
+
+        void when_validating_the_CreatedBy_property_with_an_unset_value()
+        {
+            Model.Question q = new Model.Question();
+            it["should be invalid"] = () => this.Validate(q, "CreatedBy").should_not_be_empty();
+        }
+
+        void when_validating_the_CreatedBy_property_with_a_valid_value()
+        {
+            Model.Question q = new Model.Question { CreatedBy = "jameshughes" };
+            it["should be valid"] = () => this.Validate(q, "CreatedBy").should_be_empty();
+        }
     }
 }
