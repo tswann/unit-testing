@@ -24,7 +24,7 @@ namespace CodeSlice.UnitTesting.NUnit
         }
 
         [Test]
-        public void VoteWithValidValueTest1()
+        public void VoteWithValidValueTest2()
         {
             Model.Vote vote = new Model.Vote
             {
@@ -33,6 +33,42 @@ namespace CodeSlice.UnitTesting.NUnit
 
             ICollection errors = Validate(vote, "Value");
             Assert.IsEmpty(errors);
+        }
+
+        [Test]
+        public void VoteWithInvalidValueTest1()
+        {
+            Model.Vote vote = new Model.Vote
+            {
+                Value = -2
+            };
+
+            ICollection errors = Validate(vote, "Value");
+            Assert.IsNotEmpty(errors);
+        }
+
+        [Test]
+        public void VoteWithInvalidValueTest2()
+        {
+            Model.Vote vote = new Model.Vote
+            {
+                Value = 0
+            };
+
+            ICollection errors = Validate(vote, "Value");
+            Assert.IsNotEmpty(errors);
+        }
+
+        [Test]
+        public void VoteWithInvalidValueTest3()
+        {
+            Model.Vote vote = new Model.Vote
+            {
+                Value = 2
+            };
+
+            ICollection errors = Validate(vote, "Value");
+            Assert.IsNotEmpty(errors);
         }
     }
 }
