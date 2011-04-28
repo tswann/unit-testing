@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quixote", "CodeSlice.UnitTesting.Quixote\Quixote.csproj", "{DE59EB5F-118E-4BCD-910D-6F33439449C0}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CodeSlice.UnitTesting.vsmdi
@@ -59,6 +61,10 @@ Global
 		{500C1D8C-AC64-4E12-8BFB-4869EA8063FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{500C1D8C-AC64-4E12-8BFB-4869EA8063FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{500C1D8C-AC64-4E12-8BFB-4869EA8063FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
