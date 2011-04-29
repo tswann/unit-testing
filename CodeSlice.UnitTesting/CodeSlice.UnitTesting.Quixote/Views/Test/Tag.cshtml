@@ -1,0 +1,9 @@
+﻿@using Quixote;
+@using CodeSlice.UnitTesting.Model;
+
+<link href='@Url.Content("~/Styles/quixote.css")' rel="stylesheet" type="text/css" />
+
+@TheFollowing.Describes("Tags")
+    @They.Should("Normalise the Tag Name", () => {
+        return new Tag { Name = "Test Name" }.NormalisedName.ShouldEqual("testname");
+    })

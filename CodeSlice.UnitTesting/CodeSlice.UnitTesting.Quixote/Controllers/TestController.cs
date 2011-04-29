@@ -8,10 +8,17 @@ namespace CodeSlice.UnitTesting.Quixote.Controllers
 {
     public class TestController : Controller
     {
-        //
-        // GET: /Test/
+        public ActionResult Tag()
+        {
+            return View();
+        }
 
-        public ActionResult Index()
+        public ActionResult Question()
+        {
+            return View();
+        }
+
+        public ActionResult Vote()
         {
             return View();
         }
