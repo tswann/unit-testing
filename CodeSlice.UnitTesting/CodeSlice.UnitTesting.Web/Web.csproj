@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="jasmine\spec\TagSpec.coffee" />
+    <Content Include="jasmine\spec\VoteSpec.js" />
     <Content Include="jspec\index.htm" />
     <Content Include="jspec\unit\spec.vote.js" />
     <Content Include="jspec\unit\spec.tag.js" />

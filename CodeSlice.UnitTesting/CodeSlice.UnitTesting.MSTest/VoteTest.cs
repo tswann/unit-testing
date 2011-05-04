@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.ComponentModel.DataAnnotations;
+using CodeSlice.UnitTesting.MSTest;
 
 namespace CodeSlice.UnitTesting.NUnit
 {
     [TestClass]
-    public class VoteTest
+    public class VoteTest : ValidationTest
     {
         [TestMethod]
         public void InvalidVoteValueTest1()
@@ -43,17 +44,6 @@ namespace CodeSlice.UnitTesting.NUnit
         {
             Model.Vote vote = new Model.Vote { Value = 1 };
             Assert.AreEqual(0, GetValidationResultsForField(vote, "Value").Count());
-        }
-
-        protected IEnumerable<ValidationResult> GetValidationResultsForField(Model.DomainEntity entity, string field)
-        {
-            List<ValidationResult> results = new List<ValidationResult>();
-            ValidationContext ctx = new ValidationContext(entity, null, null);
-            Validator.TryValidateObject(entity, ctx, results, true);
-
-            return from result in results
-                   where result.MemberNames.Contains(field)
-                   select result;
         }
     }
 }

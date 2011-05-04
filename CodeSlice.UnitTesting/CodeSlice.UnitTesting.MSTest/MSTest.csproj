@@ -46,6 +46,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ValidationTest.cs" />
     <Compile Include="VoteTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TagTest.cs" />
