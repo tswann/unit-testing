@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1f17787d-ae6f-4f36-9efb-84004aef7357" name="james@JIMMYJACK-WIN7 2011-05-04 20:08:33" runUser="jimmyjack-win7\james" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0cefce0f-e564-40df-9974-0c03d3106ea5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="james_JIMMYJACK-WIN7 2011-05-04 20_08_33">
+      <DeploymentItem filename="C:\projects\unit-testing\CodeSlice.UnitTesting\CodeSlice.UnitTesting.Model\bin\Debug\CodeSlice.UnitTesting.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-04T20:08:33.7404766+01:00" queuing="2011-05-04T20:08:37.4807110+01:00" start="2011-05-04T20:08:37.7648907+01:00" finish="2011-05-04T20:08:38.9416485+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InvalidVoteValueTest1" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="ce037892-f838-4408-b712-b0176739ba08">
+      <Execution id="9cd49e53-6beb-4651-a351-006a561f72e6" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidVoteValueTest1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ce037892-f838-4408-b712-b0176739ba08" executionId="9cd49e53-6beb-4651-a351-006a561f72e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9cd49e53-6beb-4651-a351-006a561f72e6" testId="ce037892-f838-4408-b712-b0176739ba08" testName="InvalidVoteValueTest1" computerName="JIMMYJACK-WIN7" duration="00:00:00.2269340" startTime="2011-05-04T20:08:38.0559063+01:00" endTime="2011-05-04T20:08:38.8068828+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cd49e53-6beb-4651-a351-006a561f72e6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Fail failed. Assert.Equals should not be used for Assertions. Please use Assert.AreEqual &amp; overloads instead.</Message>
+          <StackTrace>   at CodeSlice.UnitTesting.NUnit.VoteTest.InvalidVoteValueTest1() in C:\projects\unit-testing\CodeSlice.UnitTesting\CodeSlice.UnitTesting.MSTest\VoteTest.cs:line 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

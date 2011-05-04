@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9150ba2f-b1ef-4f15-be58-ce452d417630" name="james@JIMMYJACK-WIN7 2011-05-04 20:10:45" runUser="jimmyjack-win7\james" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0cefce0f-e564-40df-9974-0c03d3106ea5">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="james_JIMMYJACK-WIN7 2011-05-04 20_10_45">
+      <DeploymentItem filename="C:\projects\unit-testing\CodeSlice.UnitTesting\CodeSlice.UnitTesting.Model\bin\Debug\CodeSlice.UnitTesting.Model.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-05-04T20:10:45.8576641+01:00" queuing="2011-05-04T20:10:45.8918438+01:00" start="2011-05-04T20:10:46.1428203+01:00" finish="2011-05-04T20:10:46.8010235+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InvalidVoteValueTest3" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="ab8d8e62-79f6-6a92-4ca1-0b7a69954015">
+      <Execution id="f69d5cbd-9ce2-4c45-8cb9-0441c870b701" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidVoteValueTest3" />
+    </UnitTest>
+    <UnitTest name="ValidVoteValueTest2" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="033f0c3d-c971-24f2-515d-eb35f4f41f95">
+      <Execution id="56285efe-3ee6-471b-a889-5a79471547c5" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidVoteValueTest2" />
+    </UnitTest>
+    <UnitTest name="InvalidVoteValueTest1" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="ce037892-f838-4408-b712-b0176739ba08">
+      <Execution id="33119be5-d494-4152-bfaa-bd75deca622f" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidVoteValueTest1" />
+    </UnitTest>
+    <UnitTest name="ValidVoteValueTest1" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="0bc9ffc0-355a-f299-6585-f39eda75a3d2">
+      <Execution id="cae0700b-56fa-4e9a-b735-b07c590642aa" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValidVoteValueTest1" />
+    </UnitTest>
+    <UnitTest name="InvalidVoteValueTest2" storage="c:\projects\unit-testing\codeslice.unittesting\codeslice.unittesting.mstest\bin\debug\codeslice.unittesting.mstest.dll" id="55d36d8d-f54f-6eda-558f-9e5c19bc2374">
+      <Execution id="c926bd0c-ef54-4248-947c-e5c69e75d9c5" />
+      <TestMethod codeBase="C:/projects/unit-testing/CodeSlice.UnitTesting/CodeSlice.UnitTesting.MSTest/bin/Debug/CodeSlice.UnitTesting.MSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeSlice.UnitTesting.NUnit.VoteTest, CodeSlice.UnitTesting.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvalidVoteValueTest2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="033f0c3d-c971-24f2-515d-eb35f4f41f95" executionId="56285efe-3ee6-471b-a889-5a79471547c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bc9ffc0-355a-f299-6585-f39eda75a3d2" executionId="cae0700b-56fa-4e9a-b735-b07c590642aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55d36d8d-f54f-6eda-558f-9e5c19bc2374" executionId="c926bd0c-ef54-4248-947c-e5c69e75d9c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab8d8e62-79f6-6a92-4ca1-0b7a69954015" executionId="f69d5cbd-9ce2-4c45-8cb9-0441c870b701" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce037892-f838-4408-b712-b0176739ba08" executionId="33119be5-d494-4152-bfaa-bd75deca622f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="56285efe-3ee6-471b-a889-5a79471547c5" testId="033f0c3d-c971-24f2-515d-eb35f4f41f95" testName="ValidVoteValueTest2" computerName="JIMMYJACK-WIN7" duration="00:00:00.0190746" startTime="2011-05-04T20:10:46.3361797+01:00" endTime="2011-05-04T20:10:46.5686016+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="56285efe-3ee6-471b-a889-5a79471547c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="cae0700b-56fa-4e9a-b735-b07c590642aa" testId="0bc9ffc0-355a-f299-6585-f39eda75a3d2" testName="ValidVoteValueTest1" computerName="JIMMYJACK-WIN7" duration="00:00:00.0024594" startTime="2011-05-04T20:10:46.5754375+01:00" endTime="2011-05-04T20:10:46.5803203+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cae0700b-56fa-4e9a-b735-b07c590642aa">
+    </UnitTestResult>
+    <UnitTestResult executionId="c926bd0c-ef54-4248-947c-e5c69e75d9c5" testId="55d36d8d-f54f-6eda-558f-9e5c19bc2374" testName="InvalidVoteValueTest2" computerName="JIMMYJACK-WIN7" duration="00:00:00.0005335" startTime="2011-05-04T20:10:46.5822735+01:00" endTime="2011-05-04T20:10:46.5939922+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c926bd0c-ef54-4248-947c-e5c69e75d9c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="f69d5cbd-9ce2-4c45-8cb9-0441c870b701" testId="ab8d8e62-79f6-6a92-4ca1-0b7a69954015" testName="InvalidVoteValueTest3" computerName="JIMMYJACK-WIN7" duration="00:00:00.0005469" startTime="2011-05-04T20:10:46.6027813+01:00" endTime="2011-05-04T20:10:46.6105938+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f69d5cbd-9ce2-4c45-8cb9-0441c870b701">
+    </UnitTestResult>
+    <UnitTestResult executionId="33119be5-d494-4152-bfaa-bd75deca622f" testId="ce037892-f838-4408-b712-b0176739ba08" testName="InvalidVoteValueTest1" computerName="JIMMYJACK-WIN7" duration="00:00:00.0004825" startTime="2011-05-04T20:10:46.6115703+01:00" endTime="2011-05-04T20:10:46.6193828+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33119be5-d494-4152-bfaa-bd75deca622f">
+    </UnitTestResult>
+  </Results>
+</TestRun>
