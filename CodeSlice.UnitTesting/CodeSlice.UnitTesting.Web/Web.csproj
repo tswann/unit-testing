@@ -51,7 +51,6 @@
     <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="jasmine\spec\TagSpec.coffee" />
     <Content Include="jasmine\spec\VoteSpec.js" />
     <Content Include="jspec\index.htm" />
     <Content Include="jspec\unit\spec.vote.js" />
@@ -82,6 +81,7 @@
     <Content Include="qunit\lib\qunit.css" />
     <Content Include="qunit\lib\qunit.js" />
     <Content Include="jasmine\index.htm" />
+    <Content Include="qunit\unit\Vote.test.js" />
     <Content Include="qunit\unit\Tag.test.js" />
     <Content Include="src\DomainEntity.js" />
     <Content Include="src\Question.js" />
@@ -100,7 +100,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="quixote\Quixote.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

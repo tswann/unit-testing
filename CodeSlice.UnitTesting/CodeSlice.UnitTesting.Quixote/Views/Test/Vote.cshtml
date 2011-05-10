@@ -1,8 +1,26 @@
 ﻿@using Quixote;
+@using CodeSlice.UnitTesting.Model;
+@using CodeSlice.UnitTesting.Quixote.Code;
 
 <link href='@Url.Content("~/Styles/quixote.css")' rel="stylesheet" type="text/css" />
 
-@TheFollowing.Describes("Drinks for the party")
-    @They.Should("be bubbly")
-    @They.Should("include some type of beer")
-    @They.ShouldNot("be Belgian")
+@TheFollowing.Describes("Vote Validation (Value range -1 or 1)")
+    @It.Should("Mark a Vote with a value of -2 invalid", () => {
+        return new Vote { Value = -2 }.Validate("Value").Count.ShouldEqual(1);
+    })
+
+    @It.Should("Mark a Vote with a value of 0 invalid", () => {
+        return new Vote { Value = 0 }.Validate("Value").Count.ShouldEqual(1);
+    })
+
+    @It.Should("Mark a Vote with a value of 2 invalid", () => {
+        return new Vote { Value = 2 }.Validate("Value").Count.ShouldEqual(1);
+    })
+
+    @It.Should("Mark a Vote with a value of -1 valid", () => {
+        return new Vote { Value = -1 }.Validate("Value").Count.ShouldEqual(0);
+    })
+
+    @It.Should("Mark a Vote with a value of 1 valid", () => {
+        return new Vote { Value = 1 }.Validate("Value").Count.ShouldEqual(0);
+    })
