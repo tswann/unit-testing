@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CodeSlice.UnitTesting.MSTest
 {
-    class ValidationTest
+    public class ValidationTest
     {
         protected IEnumerable<ValidationResult> GetValidationResultsForField(Model.DomainEntity entity, string field)
         {
