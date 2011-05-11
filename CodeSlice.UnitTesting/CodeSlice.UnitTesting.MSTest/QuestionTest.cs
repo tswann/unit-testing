@@ -24,10 +24,17 @@ namespace CodeSlice.UnitTesting.MSTest
         }
 
         [TestMethod]
-        public void ValidQuestionQSuestionTextTest()
+        public void ValidQuestionQuestionTextTest()
         {
             Model.Question q = new Model.Question { QuestionText = "Valid Value" };
             Assert.AreEqual(GetValidationResultsForField(q, "QuestionText").Count(), 0);
+        }
+
+        [TestMethod]
+        public void CreatedDateRoughlyNowTest()
+        {
+            Model.Question q = new Model.Question();
+            Assert.AreEqual(q.CreatedDate, DateTime.Now);
         }
     }
 }
