@@ -1,0 +1,18 @@
+h2. Introduction
+
+The idea is to take the same set of classes and apply the same unit tests to them using various technologies.  Current technologies include,
+
+h2. .NET Unit Testing Tools
+
+* Specflow (with Should/ShouldFluent)
+* MSpec
+* NSpec
+* NUnit
+* MSTest
+* Quixote
+
+h2. JavaScript Unit Testing Tools
+
+* Jasmine
+* JSpec
+* QUnit
