@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quixote", "CodeSlice.UnitTesting.Quixote\Quixote.csproj", "{DE59EB5F-118E-4BCD-910D-6F33439449C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryQ", "CodeSlice.UnitTesting.StoryQ\StoryQ.csproj", "{8063FD98-3439-43AD-BE20-5FCD3E0A6AA6}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CodeSlice.UnitTesting.vsmdi
@@ -65,6 +67,10 @@ Global
 		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE59EB5F-118E-4BCD-910D-6F33439449C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8063FD98-3439-43AD-BE20-5FCD3E0A6AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8063FD98-3439-43AD-BE20-5FCD3E0A6AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8063FD98-3439-43AD-BE20-5FCD3E0A6AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8063FD98-3439-43AD-BE20-5FCD3E0A6AA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,6 +10,7 @@ h2. .NET Unit Testing Tools
 * "MSTest":http://msdn.microsoft.com/en-us/library/ms182486.aspx
 * "NSpec":http://nspec.org/
 * "Quixote":https://github.com/robconery/Quixote
+* "StoryQ":http://storyq.codeplex.com/
 
 h2. JavaScript Unit Testing Tools
 
