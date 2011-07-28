@@ -8,53 +8,74 @@ using StoryQ;
 namespace CodeSlice.UnitTesting.StoryQ
 {
     [TestFixture]
-    public class VoteStory
+    public class VoteStory : StorySpecBase
     {
         Model.Vote _vote;
         IList<ValidationResult> results = new List<ValidationResult>();
         const string VALUE = "Value";
 
-        #region Story
-
-        [TestCase]
-        public void ValidateVoteValues()
+        protected override Feature DescribeStory(Story story)
         {
-            new Story("Place Vote")
-                .InOrderTo("Place a vote")
+            return story.InOrderTo("Place a vote")
                 .AsA("User")
-                .IWant("The value entered to be valid")
-                    .WithScenario("VoteValueIsMinusTwo")
-                        .Given(IHaveCreatedANewVote)
-                        .And(IHaveSetTheValueAs, -2)
-                        .When(IValidateTheVote)
-                        .Then(TheFieldShouldBeInvalid, VALUE)
-
-                    .WithScenario("VoteValueIsMinusOne")
-                        .Given(IHaveCreatedANewVote)
-                        .And(IHaveSetTheValueAs, -1)
-                        .When(IValidateTheVote)
-                        .Then(TheFieldShouldBeValid, VALUE)
-
-                    .WithScenario("VoteValueIsZero")
-                        .Given(IHaveCreatedANewVote)
-                        .And(IHaveSetTheValueAs, 0)
-                        .When(IValidateTheVote)
-                        .Then(TheFieldShouldBeInvalid, VALUE)
-
-                    .WithScenario("VoteValueIsOne")
-                        .Given(IHaveCreatedANewVote)
-                        .And(IHaveSetTheValueAs, 1)
-                        .When(IValidateTheVote)
-                        .Then(TheFieldShouldBeValid, VALUE)
-
-                    .WithScenario("VoteValueIsTwo")
-                        .Given(IHaveCreatedANewVote)
-                        .And(IHaveSetTheValueAs, 2)
-                        .When(IValidateTheVote)
-                        .Then(TheFieldShouldBeInvalid, VALUE)
-                    .ExecuteWithReport();
+                .IWant("The value entered to be valid");
         }
 
+        #region Scenarios
+        [TestCase]
+        public void VoteValueIsMinusTwo()
+        {
+            Scenario
+                .Given(IHaveCreatedANewVote)
+                .And(IHaveSetTheValueAs, -2)
+                .When(IValidateTheVote)
+                .Then(TheFieldShouldBeInvalid, VALUE)
+                .Execute();
+        }
+
+        [TestCase]
+        public void VoteValueIsMinusOne()
+        {
+            Scenario
+                .Given(IHaveCreatedANewVote)
+                .And(IHaveSetTheValueAs, -1)
+                .When(IValidateTheVote)
+                .Then(TheFieldShouldBeValid, VALUE)
+                .Execute();
+        }
+
+        [TestCase]
+        public void VoteValueIsZero()
+        {
+            Scenario
+                .Given(IHaveCreatedANewVote)
+                .And(IHaveSetTheValueAs, 0)
+                .When(IValidateTheVote)
+                .Then(TheFieldShouldBeInvalid, VALUE)
+                .Execute();
+        }
+
+        [TestCase]
+        public void VoteValueIsOne()
+        {
+            Scenario
+                .Given(IHaveCreatedANewVote)
+                .And(IHaveSetTheValueAs, 1)
+                .When(IValidateTheVote)
+                .Then(TheFieldShouldBeValid, VALUE)
+                .Execute();
+        }
+
+        [TestCase]
+        public void VoteValueIsTwo()
+        {
+            Scenario
+                .Given(IHaveCreatedANewVote)
+                .And(IHaveSetTheValueAs, 2)
+                .When(IValidateTheVote)
+                .Then(TheFieldShouldBeInvalid, VALUE)
+                .Execute();
+        }
         #endregion
 
         #region Givens

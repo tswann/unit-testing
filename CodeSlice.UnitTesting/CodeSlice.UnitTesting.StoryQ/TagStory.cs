@@ -5,18 +5,21 @@ using StoryQ;
 namespace CodeSlice.UnitTesting.StoryQ
 {
     [TestFixture]
-    public class TagStory
+    public class TagStory : StorySpecBase
     {
         Model.Tag _tag;
 
-        [TestCase]
-        public void TagNameNormalisationTest()
+        protected override Feature DescribeStory(Story story)
         {
-            new Story("Normalise Tag Name")
-                .InOrderTo("Create a tag")
-                .AsA("User")
-                .IWant("my tag to have a normalised name")
-                .WithScenario("Create new Tag")
+            return story.InOrderTo("Normalise Tag Name")
+                        .AsA("User")
+                        .IWant("my tag to have a normalised name");
+        }
+
+        [TestCase]
+        public void CreateNewTag()
+        {
+            Scenario
                 .Given(IHaveCreatedANewTag)
                 .When(ISetItsNameTo, "New Test Tag")
                 .Then(ItShouldHaveTheNormalisedName, "newtesttag")
